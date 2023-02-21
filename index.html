@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+<!-- COLOCAR AQUI COMENTARIO... -->
+  <title>ORDENAMIENTOS</title> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script>
+
+//********************************************************************
+// COLOCAR AQUI COMENTARIO...
+	const frutas = ["Limon", "Apple", "Orange", "Pineapple", "Banana"];
+
+//********************************************************************
+// COLOCAR AQUI COMENTARIO...
+function get1Option() {
+
+	document.getElementById("demo1").innerHTML = frutas;
+	document.getElementById("demo2").innerHTML = frutas.sort();
+
+  // 1.- COLOCAR AQUI COMENTARIO...
+  var obj = document.getElementById("mySelect");
+  var sel = obj.options[obj.selectedIndex].text;
+  document.getElementById("demo3").innerHTML = "Fruta seleccionada. " + sel;
+  
+  // 2.-  COLOCAR AQUI COMENTARIO...
+	var npos = 0;
+	switch (sel) {
+	  case frutas[0]: npos = 1; break;
+	  case frutas[1]: npos = 2; break;
+	  case frutas[2]: npos = 3; break;
+	  case frutas[3]: npos = 4; break;
+	  case frutas[4]: npos = 5;
+	}
+  document.getElementById("demo4").innerHTML = "Posicion en la Lista: " + npos;
+
+}
+//********************************************************************function getPosicion() {
+</script>
+</head>
+
+<body>
+<!-- COLOCAR AQUI COMENTARIO... -->
+  <div class="container">
+<!-- COLOCAR AQUI COMENTARIO... -->
+    <div class="row">
+      <div class="col-lg-12">
+	  <!-- COLOCAR AQUI COMENTARIO... -->
+        <center><h2>AYP2 EJERCICIO CORTE 3</h2></center>
+		<center><h3>ALGORITMOS DE ORDENAMIENTOS</h3></center>
+<hr color="blue" size=3>
+		<h5>Fecha de Entrega...</h5>
+		<h5>Nombre y Apellido del Alumno...</h5>
+		<h5>Cedula de Identidad...</h5>
+		<h5>Seccion...</h5>
+<hr color="blue" size=3>
+        <h5><P>
+		Algoritmos de búsqueda.
+		Consideraciones sobre los algoritmos de búsqueda.
+		Consideraciones sobre los algoritmos de ordenamiento.
+		</P></h5>
+      </div>
+    </div>
+<hr color="blue" size=3>
+    <hr>
+	
+    <div class="row">
+	<!-- COLOCAR AQUI COMENTARIO... -->
+      <div class="col-2">
+      </div>
+      <div class="col-lg-8">
+        <h4>1.- Lista de frutas</h4>
+        <center><img src="objetos.jpg"></center>
+      </div>
+      <div class="col-2">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+	<!-- COLOCAR AQUI COMENTARIO... -->
+      <div class="col-2">
+      </div>
+      <div class="col-10">
+        <h4>2.- Seleccionar Palabra de la Lista:</h4>
+<p>
+ <form>
+Select your favorite fruit:
+<select id="mySelect">
+  <option>Apple</option>
+  <option>Banana</option>
+  <option>Limon</option>
+  <option>Orange</option>
+  <option>Pineapple</option>
+</select>
+<br><br>
+
+<input type="button" onclick="get1Option()" value="Seleccion">
+<p id="demo3">Palabra Seleccionada...</p>
+<p id="demo4">N° Posicion...</p>
+
+      </div>
+      <div class="col-2">
+      </div>
+    </div>
+
+    <div class="row">
+	<!-- COLOCAR AQUI COMENTARIO... -->
+      <div class="col-2">
+      </div>
+      <div class="col-10">
+	  <h4>3.- Mostrar frutas en el Orden Inicial:</h4>
+		<p id="demo1"></p>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+	
+    <div class="row">
+	<!-- COLOCAR AQUI COMENTARIO... -->
+      <div class="col-2">
+      </div>
+      <div class="col-10">
+        <h4>4.- Mostrar frutas Ordenadas Alfabeticamente:</h4>
+		<p id="demo2"></p>
+      </div>
+      <div class="col-2">
+      </div>
+    </div>
+
+	<!-- Fin del Contenedor manejado por Bootstrap -->
+  </div> 
+
+</body>
+
+</html>
